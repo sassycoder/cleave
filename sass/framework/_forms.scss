@@ -17,7 +17,7 @@ fieldset legend {
 
 label {
     display: inline-block;
-    font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 700; font-style: normal;
+    font-family: 'Crimson Text', serif; font-weight: 700; font-style: normal;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 16px;
@@ -27,7 +27,7 @@ label {
 
 .help, .req {
     display: inline-block;
-    font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 400; font-style: normal;
+    font-family: 'Crimson Text', serif; font-weight: 400; font-style: normal;
     font-size: 11px;
     font-size: 1.1rem;
     line-height: 16px;
@@ -63,12 +63,12 @@ input[type="file"],select {
 input {
     &[type="text"], &[type="email"], &[type="password"], &[type="tel"] {
         display: inline-block;
-        border: 1px solid $maroon;
-        color: $offBlack;
+        border: 1px solid $black;
+        color: $black;
         padding: 10px 40px 10px 8px;
         border-radius: 5px;
         width: auto;
-        font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 400; font-style: normal;
+        font-family: 'Crimson Text', serif; font-weight: 400; font-style: normal;
         font-size: 14px;
         font-size: 1.4rem;
         line-height: 16px;
@@ -78,12 +78,12 @@ input {
 
 textarea {
     display: inline-block;
-    border: 1px solid $maroon;
-    color: $offBlack;
+    border: 1px solid $black;
+    color: $black;
     padding: 10px 8px;
     border-radius: 5px;
     width: auto;
-    font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 400; font-style: normal;
+    font-family: 'Crimson Text', serif; font-weight: 400; font-style: normal;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 16px;
@@ -212,7 +212,7 @@ select:hover,select:focus,select:active {
     color: #000;
     font-size: 15px;
     font-size: 1.5rem;
-    font-family: Arial, Verdana;
+    font-family: 'Crimson Text', serif;;
     font-weight: normal;
     text-align: center;
     background-color: #f6f6f6;
