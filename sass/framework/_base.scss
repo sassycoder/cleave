@@ -6,6 +6,7 @@ $black: #000;
 $royalBlue: #041e41;
 $turqouise: #008996;
 $gold: #a69153;
+$bodyBg: #7fc4ca;
 
 * {
   box-sizing: border-box;
@@ -86,11 +87,11 @@ body {
   // Needs latest Compass, add '@import "compass"' to your scss
   // Permalink - use to edit and share this gradient:
   // http://colorzilla.com/gradient-editor/#009ec3+0,ffffff+100
-  background-color: #009ec3; // Old browsers
-  @include filter-gradient(#009ec3, #ffffff, horizontal); // IE6-8 fallback on horizontal gradient
+  background-color: $bodyBg; // Old browsers
+  @include filter-gradient($bodyBg, #ffffff, horizontal); // IE6-8 fallback on horizontal gradient
   // IE9 SVG, needs conditional override of 'filter' to 'none'
   $experimental-support-for-svg: true;
-  @include background-image(linear-gradient(left bottom,  #009ec3 0%,#ffffff 100%));
+  @include background-image(linear-gradient(left bottom,  $bodyBg 0%,#ffffff 100%));
 
 
   &.overflow-visible {
