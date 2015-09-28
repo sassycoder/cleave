@@ -257,6 +257,7 @@ a.skip:active,a.skip:focus {
 .wrapper header {
   min-height: 260px;
   width: 100%;
+  margin: 0 0 15px 0;
   background: $royalBlue;
   text-align: center;
   color: $turqouise;
@@ -391,31 +392,39 @@ nav {
   top: 30px;
 }
 
-.hero {
-  min-height: 768px;
-  margin-bottom: 40px;
+.carousel {
+  //min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
 
   .slide {
-    min-height: 768px;
+    //min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    &.slide1 {
-      background-image: url(/assets/img/components/hero_home1.jpg);
-    }
-    &.slide2 {
-      background-image: url(/assets/img/components/hero_home2.jpg);
-    }
-    &.slide3 {
-      background-image: url(/assets/img/components/hero_home3.jpg);
-    }
-    &.slide4 {
-      background-image: url(/assets/img/components/hero_home4.jpg);
+    p {
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 13px;
+      line-height: 1.3rem;
+      font-style: italic;
+      text-align: left;
+      margin: 5px 0 0 0;
     }
   }
 }
 
+.intro {
+  margin: 30px 0 0 0;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+  color: $turqouise;
+  text-align: left;
+}
 
 .center {
   text-align: center;
