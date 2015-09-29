@@ -19,17 +19,17 @@
 					//readMore = $('.read-more'),
 					// $newsTemplate = $('.hbs-news-posts'),
 
-					handleScrollFn = function () {
-						if ($window.scrollTop() > 250) {
-					    header.addClass('fixed').removeClass('menu-open');
-					  } else {
-					    header.removeClass('fixed menu-open');
-					  }
+					// handleScrollFn = function () {
+					// 	if ($window.scrollTop() > 250) {
+					//     header.addClass('fixed').removeClass('menu-open');
+					//   } else {
+					//     header.removeClass('fixed menu-open');
+					//   }
 
-						// if ($window.scrollTop() > 580 && vidPlaying) {
-						// 	vid.api('pause');
-						// }
-					},
+					// 	// if ($window.scrollTop() > 580 && vidPlaying) {
+					// 	// 	vid.api('pause');
+					// 	// }
+					// },
 
 					handleNav = function (e) {
 						header.toggleClass('menu-open');
@@ -44,12 +44,12 @@
 						$this.find('.slick-dots').css('top', (imgHeight - 33) + 'px');
 					};
 
-					$window.on('scroll', handleScrollFn);
+					//$window.on('scroll', handleScrollFn);
 					navBtn.on('click', handleNav);
 					// navlink.on('click', handleNavLink);
-					$(header).scrollupbar();
+					// $(header).scrollupbar();
 
-					handleScrollFn();
+					// handleScrollFn();
 
 					$carousel.on('init', function (slick) {
 						slideTextPos(slick);

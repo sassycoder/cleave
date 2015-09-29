@@ -61,7 +61,7 @@
 
   .row {
     width: 100%;
-    float: left;
+    // float: left;
     text-align: center;
     font-size: 0; //prevent gap between inline-block elements
 
@@ -79,7 +79,7 @@
     }
 
     &.m-top {
-      margin-top: 70px;
+      margin-top: 40px;
     }
 
     &.no-padding {
@@ -87,7 +87,7 @@
       padding-right: 0;
     }
 
-    .pane {
+    .pane, .box, .links {
       display: inline-block;
       margin-left: 20px;
       vertical-align: top;
@@ -249,9 +249,10 @@
   }
 
 @media all and(max-width: 1023px) {
+  
   .wrapper {
     width: 100%;
-    margin: auto;
+    // margin: auto;
     padding: 0;
   }
 
@@ -266,13 +267,7 @@
       padding-right: 28px;
     }
 
-    // &.grid {
-    //   .pane {
-    //     &:nth-child(4n + 1) { margin-left: 0; }
-    //   }
-    // }
-
-    .pane {
+    .pane, .box {
       margin-left: 20px;
       &.dw-mgZero {
         margin-left: 20px;
@@ -324,7 +319,7 @@
       width: 651px;
     }
     &.base12 {
-      width: 100%;
+      width: 712px;
     }
 
     &.base0 {
@@ -365,7 +360,7 @@
       width: 651px;
     }
     &.tp12 {
-      width: 100%;
+      width: 712px;
     }
     &.tp0 {
       width: 0;
@@ -386,8 +381,7 @@
 
     .pane {
       &.ml12 {
-        width: 100%;
-        float: left;
+        width: 100%;        
         margin-left: 0;
         &:first-child {
           margin-left: 0;
@@ -395,7 +389,6 @@
       }
       &.ml11 {
         width: 91.33%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -403,7 +396,6 @@
       }
       &.ml10 {
         width: 82.66%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -411,7 +403,6 @@
       }
       &.ml9 {
         width: 74%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -419,7 +410,6 @@
       }
       &.ml8 {
         width: 65.33%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -427,7 +417,6 @@
       }
       &.ml7 {
         width: 56.66%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -435,7 +424,6 @@
       }
       &.ml6 {
         width: 48%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -443,7 +431,6 @@
       }
       &.ml5 {
         width: 39.33%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -451,7 +438,6 @@
       }
       &.ml4 {
         width: 30.66%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -459,7 +445,6 @@
       }
       &.ml3 {
         width: 22%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -467,7 +452,6 @@
       }
       &.ml2 {
         width: 13.33%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -475,7 +459,6 @@
       }
       &.ml1 {
         width: 4.66%;
-        float: left;
         margin-left: 4%;
         &:first-child {
           margin-left: 0;
@@ -503,14 +486,8 @@
         margin-top: 30px;
       }
 
-      &.grid {
-        .pane {
-          &:nth-child(4n + 1) { margin-left: 0; }
-        }
-      }
-
-      .pane, .pane .pane {
-        margin-left: 0;
+      .pane, .pane .pane, .box, .links {
+        //margin-left: 0;
         &.dw-mgZero {
           margin-left: 0;
         }
@@ -790,12 +767,7 @@
       padding-right: 3.2%;
     }
 
-    &.grid {
-      .pane {
-        &:nth-child(2n + 1) { margin-left: 0; }
-      }
-    }
-    .pane {
+    .pane, .box, .links {
       margin-left: 4%;
       &.dw-mgZero {
         margin-left: 0;
