@@ -62,7 +62,7 @@ span.hiddentext,h1.hiddentext {
 }
 
 .actions {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -224,7 +224,8 @@ a.skip:active,a.skip:focus {
   white-space: nowrap;
   width: 14em;
   text-align: center;
-  font-weight: bold
+  font-weight: bold;
+  z-index: 99;
 }
 
 .fade-out {
@@ -453,40 +454,6 @@ nav {
   text-align: center;
 }
 
-// .search-box::-webkit-input-placeholder {
-//   color:    $black;
-// }
-
-// .search-box:-moz-placeholder {
-//   color:    $black;
-// }
-
-// .search-box::-moz-placeholder {
-//   color:    $black;
-// }
-
-// .search-box:-ms-input-placeholder {
-//   color:    $black;
-// }
-
-.loader {
-  background: url('/assets/img/structure/loader.gif') no-repeat center #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.5s all ease;
-  opacity: 0;
-  z-index: -1;
-}
-
-.loading .loader {
-  opacity: 1;
-  z-index: 1;
-}
-
-
 .wrapper>header:before,.wrapper>header:after {
     content: "";
     display: table
@@ -496,24 +463,6 @@ nav {
     clear: both
 }
 
-.form-modal {
-  opacity: 0;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  border-radius: 24px;
-  top: 20%;
-  width: 40%;
-  background: rgba(50,50,50,0.75);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  right: 0;
-
-  &.fade-in {
-    opacity: 1;
-    z-index: 10;
-  }
-}
 
 @media all and (max-width: 1023px) {
   html,

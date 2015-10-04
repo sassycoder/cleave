@@ -21,10 +21,9 @@
 	   <!-- CSS -->
 		<link type="text/css" rel="stylesheet" href="assets/css/main.css">
 	  <link type="text/css" rel="stylesheet" href="assets/css/print.css" media="print">
-		<!-- FONTS -->
-		<!-- <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700italic,400italic' rel='stylesheet' type='text/css'> -->
+	
 	  <!-- Must live here to provide html5 shiv in IE8 -->
-		<!-- <script src="assets/js/lib/single/modernizr-2.8.3.js"></script> -->
+		<script src="assets/js/modernizr-2.8.3.js"></script>
 	
 	  <!--[if lt IE 9]>    	
 			<script src="assets/js/lib/single/respond.min.js"></script>
@@ -133,13 +132,13 @@
 	    				</a>
 	    			</li>
 	    			<li>
-	    				<a href="">
+	    				<a href="#" data-toggle="modal" data-target="#videoModal">
 	    					<img src="./assets/img/structure/logo_btn.png">
 	    					<span>Britain is Great Video</span>
 	    				</a>
 	    			</li>
 	    			<li>
-	    				<a href="">
+	    				<a href="#">
 	    					<img src="./assets/img/structure/logo_btn.png">
 	    					<span>Contact us</span>
 	    				</a>
@@ -160,9 +159,16 @@
   	</div>
 	</footer>
 
+	<div class="modal fade" id="videoModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	    	<iframe src="https://player.vimeo.com/video/9211288?color=008996" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
 	<script type="text/javascript" src="assets/js/lib.min.js"></script>
 	<script type="text/javascript" src="assets/js/framework.min.js"></script>
-	<script type="text/javascript" src="assets/js/components.js"></script>
+	<script type="text/javascript" src="assets/js/components.min.js"></script>
 	
 
   </body>

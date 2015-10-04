@@ -29,11 +29,6 @@ module.exports = function (grunt) {
       bake: {
         files: ['templates/**/*.html'],
         tasks: 'bake:build'
-      },
-
-      handlebars: {
-        files: ['<%= handlebars.compile.src %>'],
-        tasks: ['handlebars:compile', 'concat', 'uglify']
       }
     },
 
@@ -111,22 +106,9 @@ module.exports = function (grunt) {
           }
         ]
       }
-    },
-
-    handlebars: {
-      compile: {
-        src: '<%= dirs.handlebars %>/*.hbs',
-        dest: 'assets/js/templates.js',
-        options: {
-          namespace: 'Rhapsody.Templates',
-          processName: function(filePath) {
-            return filePath.replace(/^assets\/hbs\//, '').replace(/\.hbs$/, '');
-          }
-        }
-      }
     }
   });
 
-  grunt.registerTask('build', ['compass:clean', 'compass:dist', 'jshint', 'handlebars', 'concat', 'uglify', 'bake:build', 'replace']);
+  grunt.registerTask('build', ['compass:clean', 'compass:dist', 'jshint', 'concat', 'uglify', 'bake:build', 'replace']);
   grunt.registerTask('default', ['build']);
 };
