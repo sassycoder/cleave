@@ -2,8 +2,7 @@
 
 		$(window).load(function() {
 
-			var header = $('header'),
-					navBtn = $('.nav-btn'),
+			var navBtn = $('.nav-btn'),
 					//navlink = $('.nav-link'),
 					//expBtn = $('.bttn-exp'),
 					// expBtnText = $('.bttn-exp').text(),
@@ -32,8 +31,7 @@
 					// },
 
 					handleNav = function (e) {
-						header.toggleClass('menu-open');
-						//header.hasClass('fixed') ? {} : header.addClass('fixed');
+						$('body').toggleClass('menu-open');
 						e.preventDefault();
 					},
 
@@ -79,5 +77,6 @@
 				 
 
 			$window.on('resize', function () {
+				$('body').removeClass('menu-open');
 			});
 		});
