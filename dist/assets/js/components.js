@@ -15,6 +15,11 @@ $(function() {
 						imgHeight = $this.find('.slick-current img').height();
 
 				$this.find('.slick-dots').css('top', (imgHeight - 33) + 'px');
+			},
+			handleVid = function () {
+				$('#videoModal').on('hide.bs.modal', function () {
+				  vid.api('pause');
+				});
 			};
 
 	//toggle mobile menu
@@ -53,10 +58,9 @@ $(function() {
   });
 
   //pause video when modal closes
-   vid.addEvent('ready', function() {});
-  $('#videoModal').on('hide.bs.modal', function () {
-	  vid.api('pause');
-	});
+   vid.addEvent('ready', function() {
+		handleVid();
+   });
 
   //hide menu on screen resize
 	$(window).on('resize', function () {
