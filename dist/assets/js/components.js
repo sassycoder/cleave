@@ -2,6 +2,8 @@
 
 $(function() {
 	var $carousel = $('.carousel'),
+			iframe = $('#vimeoplayer')[0],
+      vid = $f(iframe), //froogaloop for vimeo api (https://github.com/vimeo/player-api/tree/master/javascript)
 
 			handleNav = function (e) {
 				$('body').toggleClass('menu-open');
@@ -28,7 +30,7 @@ $(function() {
 		slideTextPos(slick);
 	});
 
-  // Init carousel
+  // Init carousel (http://kenwheeler.github.io/slick/)
   $carousel.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -44,6 +46,17 @@ $(function() {
     slide: '.slide',
     cssEase: 'linear'
   });
+
+  //When clicking on carousel, goto next slide
+  $('.slick-initialized').on('click', '.slick-slide img', function () {
+		$carousel.slick('slickNext');
+  });
+
+  //pause video when modal closes
+   vid.addEvent('ready', function() {});
+  $('#videoModal').on('hide.bs.modal', function () {
+	  vid.api('pause');
+	});
 
   //hide menu on screen resize
 	$(window).on('resize', function () {

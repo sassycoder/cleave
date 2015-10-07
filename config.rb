@@ -3,7 +3,7 @@ css_dir = "dist/assets/css"
 sass_dir = "sass"
 images_dir = "dist/assets/img"
 javascripts_dir = "dist/assets/js"
-output_style = :compressed
+output_style = :compact
 line_comments = false
 disable_warnings = true
 
